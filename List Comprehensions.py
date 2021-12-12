@@ -22,12 +22,14 @@ print([i for i in range(10,210) if i%10 == 0])    # every element will be tested
 
 
 #4. Getting bonanza with the comprehensions and using a function to make the list. 
-print("\n \n Using a function to create a list for ultimate list customization. \n")
+print("\n \n Using a function to create a list for ultimate list customization. \n")        # Function destined list comprehensions 
 
-def Lst_Function(i):
+def Lst_Function(i):     # the function for the facorial
     sum = 1
     for j in range(1, i+1):
         sum = sum*j
     return sum
+
+
 print([Lst_Function(i) for i in range(1,10)])
 
