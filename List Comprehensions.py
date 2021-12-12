@@ -25,6 +25,9 @@ print([i for i in range(10,210) if i%10 == 0])    # every element will be tested
 print("\n \n Using a function to create a list for ultimate list customization. \n")
 
 def Lst_Function(i):
-    i
+    sum = 1
+    for j in range(1, i+1):
+        sum = sum*j
+    return sum
 print([Lst_Function(i) for i in range(1,10)])
 
