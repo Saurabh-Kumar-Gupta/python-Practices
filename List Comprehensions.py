@@ -6,3 +6,9 @@
 
 list1 = [i for i in range(151)]
 print(list1)
+
+# 2. Doing math with your comprehensions. 
+print("\n \n N0.2 Doing math with List comprehensions \n \n")
+
+list2 = [i*10 for i in range(1,101)]            # every element will be multiplied by 10 
+print(list2)
