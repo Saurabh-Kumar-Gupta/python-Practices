@@ -5,7 +5,7 @@
 # 1. Making a list that goes from 1 to 15 in one line
 print("\n NO.1 - Creating a normal list comprehension which get me values from 1 to 15 in one line. \n")
 
-print([i for i in range(1,15)])              # we can get a whole list with just one line
+print([i for i in range(1,16)])              # we can get a whole list with just one line
 
 
 # 2. Doing math with your comprehensions. 
@@ -22,7 +22,7 @@ print([i for i in range(10,210) if i%10 == 0])    # every element will be tested
 
 
 #4. Getting bonanza with the comprehensions and using a function to make the list. 
-print("\n \n Using a function to create a list for ultimate list customization. \n")        # Function destined list comprehensions 
+print("\n \n NO.4 Using a function to create a list for ultimate list customization. \n")        # Function destined list comprehensions 
 
 def Lst_Function(i):     # the function for the facorial
     sum = 1
@@ -33,3 +33,6 @@ def Lst_Function(i):     # the function for the facorial
 
 print([Lst_Function(i) for i in range(1,10)])
 
+s=[]
+s=[s[-1] for x in range(1,10) if not s.append(x*s[-1] if s else 1)]
+print(s)
